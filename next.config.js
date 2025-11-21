@@ -8,17 +8,13 @@ const nextConfig = {
     ignoreBuildErrors: true, // Disable TypeScript errors during build
   },
   images: {
-    unoptimized: false, // Enable optimization
-    formats: ['image/webp', 'image/avif'], // Use modern formats
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    minimumCacheTTL: 60,
+    unoptimized: true, // Disable optimization for Netlify
     domains: [
       "source.unsplash.com",
       "images.unsplash.com",
       "ext.same-assets.com",
       "ugc.same-assets.com",
-      "cevrdgbrzjvbfmkkukpj.supabase.co", // Add Supabase storage domain
+      "cevrdgbrzjvbfmkkukpj.supabase.co",
     ],
     remotePatterns: [
       {
