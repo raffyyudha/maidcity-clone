@@ -648,22 +648,24 @@ export default function Home() {
           </div>
 
           {/* Bottom Footer */}
-          <div className="border-t border-white/30 pt-6">
+          <div className="border-t border-white/30 pt-6 mt-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-              <div className="flex items-center gap-4">
+              <div className="flex items-center">
                 <Image
                   src="/logo.avif"
                   alt="Sweet Home Logo"
-                  width={120}
-                  height={48}
+                  width={150}
+                  height={60}
+                  className="h-auto"
                 />
               </div>
-              <div className="text-center text-sm">
+              <div className="text-center md:text-right text-sm">
                 <p>
-                  <a href="#" className="hover:underline">Privacy Policy</a> |
-                  <a href="#" className="hover:underline ml-1">Terms of Service</a>
+                  <a href="/privacy-policy" className="hover:underline">Privacy Policy</a>
+                  <span className="mx-2">|</span>
+                  <a href="/terms-of-service" className="hover:underline">Terms of Service</a>
                 </p>
-                <p className="mt-2">Copyright  Sweet Home | All Rights Reserved</p>
+                <p className="mt-2">Copyright Sweet Home | All Rights Reserved</p>
               </div>
             </div>
           </div>
